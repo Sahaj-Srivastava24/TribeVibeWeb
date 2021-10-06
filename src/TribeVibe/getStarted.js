@@ -1,10 +1,10 @@
 // import 'atropos/css';
 // import 'atropos/scss';
 
-import homepagecss from './homepage.css'; 
+// import homepagecss from './homepage.css'; 
 import Card from './card'
 import styled from 'styled-components';
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import {useSpring,animated} from 'react-spring';
 
 // const [MousePosition, setMousePosition] = useState({
