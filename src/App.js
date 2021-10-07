@@ -1,13 +1,22 @@
 import React from 'react';
-// import Layout from './FoodOrder/Layout'
-// import Layout from './TODO-List/Layout';
-import TribeVibe from './TribeVibe/HomePage'
+import Societies from './pages/Societies.js';
+import TribeVibe from './TribeVibe/HomePage';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 function App() {
 
   return (
-  <TribeVibe/>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <TribeVibe/>
+        </Route>
+        <Route path="/societies">
+          <Societies />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

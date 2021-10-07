@@ -19,13 +19,13 @@ const card =(props)=>{
             <div className="img5">
                 <img style={{height: '67vh',width: '28rem',borderRadius: '4%'}} alt="mountains" src={'https://atroposjs.com/images/header/atropos-forest-front.svg'}></img>
             </div>
-           
-             <div className="txt">
-                 TRIBE VIBE
-             </div>
-             <button className="btnn">
-                 Get Started
-             </button>
+        
+            <div className="txt">
+                TRIBE VIBE
+            </div>
+            <button className="btnn">
+                Get Started
+            </button>
         </div>
     );
 }
