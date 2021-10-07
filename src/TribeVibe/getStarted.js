@@ -44,7 +44,7 @@ const getStarted =()=>{
        }}
        >
            
-           <Card/>
+           <Card xys={props}/>
            
     </Wrapper>
     );
