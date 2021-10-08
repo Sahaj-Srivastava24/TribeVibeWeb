@@ -1,15 +1,27 @@
 import React from 'react';
-// import Layout from './FoodOrder/Layout'
-// import Layout from './TODO-List/Layout';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SocietyCard from './TribeVibe/components/SocietyCard';
+import SocietyInfo from './TribeVibe/components/SocietyInfo';
+
 import TribeVibe from './TribeVibe/HomePage'
-// import Timeline from './TribeVibe/Timeline/timeline'
-// import Radium, {StyleRoot} from 'radium';
+
 
 function App() {
 
   return (
-  <TribeVibe/>
-  // <Timeline/>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <TribeVibe/>
+        </Route>
+        <Route path="/societies/:id">
+          <SocietyInfo />
+        </Route>
+        <Route path="/societies">
+          <SocietyCard/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -5,7 +5,7 @@ const navBar =(props)=>{
         <div>
             
             <nav className="nav">
-                <img style={{height:'30px',width:'50px'}}src={require("./Assets/LOGO.png")}></img>
+                <img style={{height:'60px',width:'100px'}} alt=""  src={require("./Assets/LOGO.png")}></img>
                 
 
             </nav>

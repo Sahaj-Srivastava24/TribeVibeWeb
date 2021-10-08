@@ -1,9 +1,9 @@
 import React from 'react';
-import homepagecss from './homepage.css'; 
+import './homepage.css'; 
 import Nav from './navBar';
 import GetStarted from './getStarted';
 import TimeLine from './TimelineContent/timeline'
-const homePage =(props)=>{
+const homePage =()=>{
     return(
         <div className="homepage">
             <Nav/>

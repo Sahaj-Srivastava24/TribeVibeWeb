@@ -1,11 +1,12 @@
 // import 'atropos/css';
 // import 'atropos/scss';
 
-import homepagecss from './homepage.css'; 
+import './homepage.css'; 
 import Card from './card'
 import styled from 'styled-components';
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import {useSpring,animated} from 'react-spring';
+
 
 // const [MousePosition, setMousePosition] = useState({
 //     left: 0,
@@ -29,24 +30,22 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 const Wrapper=styled(animated.div)`display: flex;
 justify-content: center;
 height: 67vh;
-width:70%`;
+width:140%`;
 
 
 const getStarted =()=>{
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1] }))
 
     return(
-       <Wrapper
-       onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
-       onMouseLeave={() => set({xys:[0,0,1]})}
-       style={{
-           transform: props.xys.interpolate(trans)
-       }}
-       >
-           
-           <Card xys={props}/>
-           
-    </Wrapper>
+        <Wrapper
+        onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
+        onMouseLeave={() => set({xys:[0,0,1]})}
+        style={{
+            transform: props.xys.interpolate(trans)
+        }}
+        >
+            <Card xys={props}/>
+        </Wrapper>
     );
 }
 

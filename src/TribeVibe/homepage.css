@@ -2,6 +2,20 @@
   
   background-image:linear-gradient(to bottom right, #240046 5%, #9d4edd,#7B2CBF);
 } */
+.hiddenTimelineImgs{
+  visibility:hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    /* Style adjustments for non responsive websites */
+    body{width:940px;}
+    .node{
+      visibility:hidden;
+    }
+    .hiddenTimelineImgs{
+      display:none;
+    }
+}
 
 .homepage{
     /* background-image: linear-gradient(to bottom, #7B2CBF ,#5A189A); */
@@ -38,7 +52,7 @@
     border-radius:4% 4%;
     /* box-shadow: 2px 2px rgba(235, 5, 5, 0.7); */
     height: 67vh;
-    width:28rem;
+    width:56rem;
     /* background-color:rgb(248, 207, 180); */
 }
 
@@ -95,8 +109,8 @@
 
 .nav{
     /* height: 40px; */
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
     color: white;
 }
 
@@ -233,13 +247,26 @@
   color:white;
   font-weight: 200;
   background-image: linear-gradient(to bottom, #5A189A,#3C096C);
-  line-height:20px;
+  line-height:40px;
   padding: 50px 50px;
   text-align: center;
   /* margin: 40px; */
-  font-size:10px;
+  font-size:20px;
 }
 
 .imgs{
   margin:0;
+}
+
+.timelineHeading{
+  font-size:30px;
+  text-align:center;
+  padding-right: 14%;
+  margin-bottom: 3%;
+  margin-top: 5%;
+  /* color:#E0AAFF; */
+  color:#EA698B;
+  font-family: Dalek;
+  letter-spacing: 3px;
+  
 }
